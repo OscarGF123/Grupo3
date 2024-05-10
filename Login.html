@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="EstiloLogin.css" />
+  </head>
+  <body>
+    <form>
+      <img src="Imagenes/usuario.png" alt="user-img" />
+      <label for="Username">Usuario</label>
+      <input type="text" id="Username" placeholder="Usuario" required />
+      <label for="Password">Contraseña</label>
+      <input type="Password" id="Password" placeholder="Contraseña" required />
+
+      <div class="box-visible">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          onclick="MostrarPsw()"
+        />
+        <label for="visible">Mostrar Contraseña</label>
+      </div>
+      <button type="submit" id="submit">Iniciar Sesion</button>
+    </form>
+
+    <script>
+      var state = false;
+      function MostrarPsw() {
+        if (state) {
+          document.getElementById("Password").setAttribute("type", "Password");
+          state = false;
+        } else {
+          document.getElementById("Password").setAttribute("type", "text");
+          state = true;
+        }
+      }
+    </script>
+
+    <script src="mainLogin.js"></script>
+  </body>
+</html>

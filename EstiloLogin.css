@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-image: url(./Imagenes/FondoLog.jpg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: aqua;
+  width: 300px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 7px 13px 37px #fff;
+  border-radius: 20px;
+  border-top: 5px solid #7c7878;
+  border-left: 5px solid #7c7878;
+}
+
+form img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  opacity: 40;
+}
+form input[type="text"],
+input[type="password"] {
+  outline: 0;
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 10px;
+}
+
+form label {
+  font-weight: 500;
+  padding: 10px;
+}
+
+.box-visible {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  outline: 0;
+  border: 0;
+  background-color: royalblue;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 250px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  border-bottom: 2px solid #7c7878;
+}
+
+form button:hover {
+  opacity: 75;
+}
