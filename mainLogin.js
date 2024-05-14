@@ -9,3 +9,5 @@ const $submit = document.getElementById("submit"),
                 else $password.type = "text";
             }
         }
+
+document.write("Modificacion de Oscar");
